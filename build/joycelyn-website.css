@@ -1,0 +1,48 @@
+header {
+  display: flex;
+}
+header .titles {
+  flex-grow: 1;
+}
+header .titles h2 {
+  font-size: 18px;
+  display: inline;
+}
+header .menu-icon {
+  align-self: flex-end;
+  float: right;
+  font-size: 18px;
+  display: inline;
+}
+header .menu-icon h4 {
+  margin: 0;
+  display: inline;
+}
+header .menu-icon .fa-bars {
+  color: #000;
+}
+header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: #fff;
+}
+header nav .fa-times {
+  font-size: 30px;
+}
+header nav ul {
+  padding-left: 0;
+}
+header nav ul li {
+  list-style: none;
+  font-size: 20px;
+  text-align: center;
+  padding: 5vh 0;
+}
+header nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
+/*# sourceMappingURL=joycelyn-website.css.map */
