@@ -1,0 +1,22 @@
+{
+  "name": "joycelyn-website",
+  "version": "1.0.0",
+  "description": "Joycelyn Choo personal website",
+  "main": "js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mkdir": "",
+    "build": "",
+    "clean": "",
+    "watch": "",
+    "build:html": "",
+    "clean:html": "",
+    "watch:html": ""
+  },
+  "author": "benjamin johnson",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "normalize.css": "^4.2.0"
+  }
+}
