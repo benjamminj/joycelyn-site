@@ -1,0 +1,25 @@
+{
+  "name": "about",
+  "version": "1.0.0",
+  "description": "About page",
+  "main": "js/app.js",
+  "scripts": {
+    "export:build": "npm run export:clean && npm run build && mv build ../../build/about",
+    "export:clean": "rm -rf ../../build/about",
+    "mkdir": "mkdir build",
+    "build": "npm run clean && npm run mkdir && npm run build:html",
+    "clean": "rm -rf build/",
+    "watch": "npm run watch:html & npm run watch:css",
+    "build:html": "npm run clean:html && cp index.html build",
+    "clean:html": "rm -f build/index.html",
+    "watch:html": "npm run build:html && chokidar index.html -c 'npm run build:html'",
+    "build:css": "npm run clean:css && lessc --source-map css/style.less build/$npm_package_name.css",
+    "clean:css": "rm -f build/$npm_package_name.css build/$npm_package_name.css.map",
+    "watch:css": "npm run build:css && chokidar 'css/**/*.less' -c 'npm run build:css'"
+  },
+  "author": "Benjamin Johnson",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0"
+  }
+}
