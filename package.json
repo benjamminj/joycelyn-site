@@ -18,14 +18,15 @@
     "build:pages": "npm run build:about",
 
     "mkdir:about": "mkdir build/about",
-    "build:about": "npm run clean:about && npm run mkdir:about && cp pages/about/index.html build/about/",
+    "build:about": "npm run clean:about && npm run mkdir:about && npm run build:about:html",
     "clean:about": "rm -rf build/about",
-    "build:about:html": "",
-    "clean:about:html": "",
-    "watch:about:html": "",
-    "build:about:css": "",
-    "clean:about:css": "",
-    "watch:about:css": ""
+    "watch:about": "npm run watch:about:html & npm run watch:about:css",
+    "build:about:html": "npm run clean:about:html && cp pages/about/index.html build/about/",
+    "clean:about:html": "rm -f build/about/index.html",
+    "watch:about:html": "npm run build:about:html && chokidar pages/about/index.html -c 'npm run build:about:html'",
+    "build:about:css": "npm run clean:about:css && lessc --source-map pages/about/css/style.less build/about/about.css",
+    "clean:about:css": "rm -f build/about/about.css build/about/about.css.map",
+    "watch:about:css": "npm run build:css && chokidar 'pages/about/css/**/*.less' -c 'npm run build:about:css'"
   },
   "repository": {
     "type": "git",
