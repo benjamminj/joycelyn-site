@@ -1,5 +1,17 @@
+.horizontal-list {
+  display: inline;
+  padding-left: 0;
+}
+.content-wrapper {
+  max-width: 600px;
+  width: 95%;
+  margin: 0 auto;
+}
 header {
   display: flex;
+  max-width: 600px;
+  width: 95%;
+  margin: 0 auto;
 }
 header .titles {
   flex-grow: 1;
@@ -8,17 +20,17 @@ header .titles h2 {
   font-size: 18px;
   display: inline;
 }
-header .menu-icon {
+header .titles .menu-icon {
   align-self: flex-end;
   float: right;
   font-size: 18px;
   display: inline;
 }
-header .menu-icon h4 {
+header .titles .menu-icon h4 {
   margin: 0;
   display: inline;
 }
-header .menu-icon .fa-bars {
+header .titles .menu-icon .fa-bars {
   color: #000;
 }
 header nav {
@@ -28,6 +40,7 @@ header nav {
   width: 100vw;
   height: 100%;
   background: #fff;
+  z-index: 999;
   display: none;
 }
 header nav .fa-times {
@@ -48,6 +61,8 @@ header nav ul li a {
 }
 #banner {
   position: relative;
+  height: 80vh;
+  width: 100%;
 }
 #banner ul.rotating-pic-wrapper {
   padding-left: 0;
@@ -64,6 +79,7 @@ header nav ul li a {
   z-index: 555;
   text-align: center;
   margin-top: -10vh;
+  font-size: 14px;
 }
 #banner div.rotating-item-nav ul {
   display: inline;
@@ -71,5 +87,6 @@ header nav ul li a {
 }
 #banner div.rotating-item-nav ul li {
   display: inline;
+  margin: 0 5px;
 }
 /*# sourceMappingURL=joycelyn-website.css.map */

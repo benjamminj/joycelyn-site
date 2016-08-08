@@ -1,5 +1,6 @@
 header {
 	display: flex;
+	.content-wrapper;
 	// width: 100%;
 	.titles {
 		flex-grow: 1;
@@ -9,20 +10,20 @@ header {
 			font-size: 18px;
 			display: inline;
 		}
-	}
 
-	.menu-icon {
-		align-self: flex-end;
-		float: right;
-		font-size: 18px;
-		display: inline;
-		h4 {
-			margin: 0;
-			display:inline;
-		}
-		.fa-bars {
-			color: #000;
-			
+		.menu-icon {
+			align-self: flex-end;
+			float: right;
+			font-size: 18px;
+			display: inline;
+			h4 {
+				margin: 0;
+				display:inline;
+			}
+			.fa-bars {
+				color: #000;
+				
+			}
 		}
 	}
 
@@ -33,6 +34,7 @@ header {
 			width:100vw; 
 			height: 100%;
 			background: #fff;
+			z-index: 999;
 			display: none;
 
 		.fa-times {

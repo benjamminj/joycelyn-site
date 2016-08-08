@@ -1,5 +1,9 @@
+@import (reference) "classes.less";
+
 #banner {
 	position: relative;
+	height: 80vh;
+	width: 100%;
 
 	ul.rotating-pic-wrapper {
 		padding-left: 0;
@@ -17,16 +21,18 @@
 		z-index: 555;
 		text-align: center;
 		margin-top: -10vh;
+		font-size: 14px;
 		// position: absolute;
 
 		i {
 			// display: inline;
 		} // Back Arrow
 		ul {
-			display: inline;
-			padding-left: 0;
+			.horizontal-list;
+
 			li {
 				display: inline;
+				margin: 0 5px;
 			}
 		}
 		i {} // Forward Arrow
