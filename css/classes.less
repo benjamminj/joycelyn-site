@@ -1,9 +1,18 @@
-.horizontal-list {
-	display: inline;
+.list-reset {
 	padding-left: 0;
+}
+
+.horizontal-list(@margin) {
+	display:inline-block;
+	margin: @margin;
 }
 
 .content-wrapper {
 	width: 95%;
 	margin: 0 auto;
+}
+
+.set-font-size-and-width(@px) {
+	font-size: @px;
+	width: @px;
 }

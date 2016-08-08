@@ -1,5 +1,4 @@
-.horizontal-list {
-  display: inline;
+.list-reset {
   padding-left: 0;
 }
 .content-wrapper {
@@ -7,9 +6,9 @@
   margin: 0 auto;
 }
 header {
-  display: flex;
   width: 95%;
   margin: 0 auto;
+  display: flex;
 }
 header .titles {
   flex-grow: 1;
@@ -78,14 +77,40 @@ header nav ul li a {
   z-index: 555;
   text-align: center;
   margin-top: -10vh;
-  font-size: 14px;
+  font-size: 20px;
 }
 #banner div.rotating-item-nav ul {
-  display: inline;
   padding-left: 0;
+  display: inline;
+  margin: 0 7px;
 }
 #banner div.rotating-item-nav ul li {
-  display: inline;
-  margin: 0 5px;
+  display: inline-block;
+  margin: 0 7px;
+}
+@import (reference) "classes.less";
+footer {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5px;
+}
+footer nav.media ul {
+  padding-left: 0;
+}
+footer nav.media ul li {
+  display: inline-block;
+  margin: 0 20px;
+  border-radius: 50%;
+  background-color: #000;
+}
+footer nav.media ul li i {
+  font-size: 18px;
+  width: 18px;
+  margin: 5px;
+  color: #fff;
+}
+footer h6 {
+  margin: 0;
 }
 /*# sourceMappingURL=joycelyn-website.css.map */

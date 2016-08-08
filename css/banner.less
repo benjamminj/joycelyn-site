@@ -7,8 +7,10 @@
 
 	ul.rotating-pic-wrapper {
 		padding-left: 0;
+
 		li {
 			list-style: none;
+
 			img {
 				width: 100%;
 				height: 80vh;
@@ -21,20 +23,20 @@
 		z-index: 555;
 		text-align: center;
 		margin-top: -10vh;
-		font-size: 14px;
-		// position: absolute;
+		font-size: 20px;
 
-		i {
-			// display: inline;
-		} // Back Arrow
+		i {} // Back Arrow
+		
 		ul {
-			.horizontal-list;
+			.list-reset;
+			display: inline;
+			margin: 0 7px;
 
 			li {
-				display: inline;
-				margin: 0 5px;
+				.horizontal-list(0 7px);
 			}
 		}
+		
 		i {} // Forward Arrow
 	}
 }
