@@ -7,7 +7,7 @@
     "export:build": "npm run export:clean && npm run build && mv build ../../build/about",
     "export:clean": "rm -rf ../../build/about",
     "mkdir": "mkdir build",
-    "build": "npm run clean && npm run mkdir && npm run build:html",
+    "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:css",
     "clean": "rm -rf build/",
     "watch": "npm run watch:html & npm run watch:css",
     "build:html": "npm run clean:html && cp index.html build",
@@ -20,6 +20,7 @@
   "author": "Benjamin Johnson",
   "license": "ISC",
   "devDependencies": {
-    "chokidar-cli": "^1.2.0"
+    "chokidar-cli": "^1.2.0",
+    "less": "^2.7.1"
   }
 }
