@@ -13,7 +13,19 @@
     "watch:html": "npm run build:html && chokidar index.html -c 'npm run build:html'",
     "build:css": "npm run clean:css && lessc --source-map css/style.less build/$npm_package_name.css",
     "clean:css": "rm -f build/$npm_package_name.css build/$npm_package_name.css.map",
-    "watch:css": "npm run build:css && chokidar 'css/**/*.less' -c 'npm run build:css'"
+    "watch:css": "npm run build:css && chokidar 'css/**/*.less' -c 'npm run build:css'",
+
+    "build:pages": "npm run build:about",
+
+    "mkdir:about": "mkdir build/about",
+    "build:about": "npm run clean:about && npm run mkdir:about && cp pages/about/index.html build/about/",
+    "clean:about": "rm -rf build/about",
+    "build:about:html": "",
+    "clean:about:html": "",
+    "watch:about:html": "",
+    "build:about:css": "",
+    "clean:about:css": "",
+    "watch:about:css": ""
   },
   "repository": {
     "type": "git",
