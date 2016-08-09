@@ -16,6 +16,7 @@
     "watch:css": "npm run build:css && chokidar 'css/**/*.less' -c 'npm run build:css'",
 
     "build:pages": "npm run build:bio",
+    "watch:pages": "npm run watch:bio",
 
     "mkdir:bio": "mkdir build/bio",
     "build:bio": "npm run clean:bio && npm run mkdir:bio && npm run build:bio:html && npm run build:bio:css",
