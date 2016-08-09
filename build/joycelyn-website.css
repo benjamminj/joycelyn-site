@@ -73,11 +73,15 @@ header nav ul li a {
   height: 80vh;
   object-fit: cover;
 }
+#banner ul.rotating-pic-wrapper li img#image-1 {
+  object-position: 35%;
+}
 #banner div.rotating-item-nav {
   z-index: 555;
   text-align: center;
   margin-top: -10vh;
-  font-size: 20px;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
 }
 #banner div.rotating-item-nav ul {
   padding-left: 0;
