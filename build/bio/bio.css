@@ -24,7 +24,7 @@ header .titles .menu-icon .fa-bars {
   color: #000;
 }
 header nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -32,23 +32,32 @@ header nav {
   background: #fff;
   z-index: 999;
   display: none;
+  overflow-y: scroll;
 }
 header nav .fa-times {
   font-size: 30px;
   margin: 20px 20px 0;
 }
-header nav ul {
+header nav ul.menu {
   padding-left: 0;
 }
-header nav ul li {
+header nav ul.menu li.menu-item {
   list-style: none;
   font-size: 20px;
   text-align: center;
   padding: 5vh 0;
 }
-header nav ul li a {
+header nav ul.menu li.menu-item a {
   color: #000;
   text-decoration: none;
+}
+header nav ul.menu li.menu-item ul.submenu {
+  padding-left: 0;
+}
+header nav ul.menu li.menu-item ul.submenu li.submenu-item {
+  list-style: none;
+  font-size: 0.8rem;
+  padding: 15px 5px;
 }
 @media only screen and (min-width: 600px) {
   header {
@@ -68,14 +77,21 @@ header nav ul li a {
   header nav .fa-times {
     display: none;
   }
-  header nav ul {
+  header nav ul.menu {
     font-size: 0;
   }
-  header nav ul li {
+  header nav ul.menu li.menu-item {
     display: inline-block;
     padding: 15px 0;
     font-size: 16px;
     width: 16.66666667%;
+  }
+  header nav ul.menu li.menu-item ul.submenu {
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+    width: 15.83333333%;
+    padding-top: 5px;
   }
 }
 @import (reference) "classes.less";
