@@ -15,18 +15,18 @@
     "clean:css": "rm -f build/$npm_package_name.css build/$npm_package_name.css.map",
     "watch:css": "npm run build:css && chokidar 'css/**/*.less' -c 'npm run build:css'",
 
-    "build:pages": "npm run build:about",
+    "build:pages": "npm run build:bio",
 
-    "mkdir:about": "mkdir build/about",
-    "build:about": "npm run clean:about && npm run mkdir:about && npm run build:about:html && npm run build:about:css",
-    "clean:about": "rm -rf build/about",
-    "watch:about": "npm run watch:about:html & npm run watch:about:css",
-    "build:about:html": "npm run clean:about:html && cp pages/about/index.html build/about/",
-    "clean:about:html": "rm -f build/about/index.html",
-    "watch:about:html": "npm run build:about:html && chokidar pages/about/index.html -c 'npm run build:about:html'",
-    "build:about:css": "npm run clean:about:css && lessc --source-map pages/about/css/style.less build/about/about.css",
-    "clean:about:css": "rm -f build/about/about.css build/about/about.css.map",
-    "watch:about:css": "npm run build:css && chokidar 'pages/about/css/**/*.less' -c 'npm run build:about:css'"
+    "mkdir:bio": "mkdir build/bio",
+    "build:bio": "npm run clean:bio && npm run mkdir:bio && npm run build:bio:html && npm run build:bio:css",
+    "clean:bio": "rm -rf build/bio",
+    "watch:bio": "npm run watch:bio:html & npm run watch:bio:css",
+    "build:bio:html": "npm run clean:bio:html && cp pages/bio/index.html build/bio/",
+    "clean:bio:html": "rm -f build/bio/index.html",
+    "watch:bio:html": "npm run build:bio:html && chokidar pages/bio/index.html -c 'npm run build:bio:html'",
+    "build:bio:css": "npm run clean:bio:css && lessc --source-map pages/bio/css/style.less build/bio/bio.css",
+    "clean:bio:css": "rm -f build/bio/bio.css build/bio/bio.css.map",
+    "watch:bio:css": "npm run build:css && chokidar 'pages/bio/css/**/*.less' -c 'npm run build:bio:css'"
   },
   "repository": {
     "type": "git",
