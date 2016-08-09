@@ -50,6 +50,34 @@ header nav ul li a {
   color: #000;
   text-decoration: none;
 }
+@media only screen and (min-width: 600px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+  header .titles {
+    display: inline-block;
+  }
+  header .titles .menu-icon {
+    display: none;
+  }
+  header nav {
+    display: inline;
+    position: static;
+  }
+  header nav .fa-times {
+    display: none;
+  }
+  header nav ul {
+    font-size: 0;
+  }
+  header nav ul li {
+    display: inline-block;
+    padding: 15px 0;
+    font-size: 16px;
+    width: 16.66666667%;
+  }
+}
 @import (reference) "classes.less";
 footer {
   width: 95%;

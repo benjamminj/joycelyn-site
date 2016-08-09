@@ -18,7 +18,7 @@
     "build:pages": "npm run build:about",
 
     "mkdir:about": "mkdir build/about",
-    "build:about": "npm run clean:about && npm run mkdir:about && npm run build:about:html",
+    "build:about": "npm run clean:about && npm run mkdir:about && npm run build:about:html && npm run build:about:css",
     "clean:about": "rm -rf build/about",
     "watch:about": "npm run watch:about:html & npm run watch:about:css",
     "build:about:html": "npm run clean:about:html && cp pages/about/index.html build/about/",
